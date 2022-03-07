@@ -13,6 +13,7 @@ The addition is:
 - code/auto_certify.py: auto compute the optimal value for many test examples.
 - code/matlab_lp.m: matlab implementation of LP relaxation
 - code/matlab_SDP3.m: Matlab implementation of SDP3 and SDP4 relaxation
+- review_verification_for_NN.pdf: review report
 
 ## How to use:
 ```python
