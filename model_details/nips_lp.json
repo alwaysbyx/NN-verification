@@ -1,0 +1,1 @@
+[{"weight_var": "model1/dense/kernel", "bias_var": "model1/dense/bias", "is_transpose": true, "type": "ff_relu"}, {"weight_var": "model1/dense_1/kernel", "bias_var": "model1/dense_1/bias", "is_transpose": true, "type": "ff"}]
