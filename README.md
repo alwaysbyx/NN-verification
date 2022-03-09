@@ -9,11 +9,16 @@ them in examples.
 
 ## Contents
 The overall code and input data is from the codebase of Raghunathan et al.
-The addition is:
+
+The **addition** is:
 - code/auto_certify.py: auto compute the optimal value for many test examples.
 - code/matlab_lp.m: matlab implementation of LP relaxation
 - code/matlab_SDP3.m: Matlab implementation of SDP3 and SDP4 relaxation
 - review_verification_for_NN.pdf: review report
+
+The **modification** is:
+- computes_bound.py: since in sdp formulation, we want to know the lower bound and upper bound of activated value, 
+![1](https://render.githubusercontent.com/render/math?math=\bar{l}_{k}\leq{x_k}\leq\bar{u}_k,k\in[1,L])  in LP relaxation and layer-based SDP, we want to get the lower bound and upper bound of input of activation function, ![2](https://render.githubusercontent.com/render/math?math=l_{k+1}\leq{W_kx_k+b_k}\leq{u_{k+1}},k\in[L-1])
 
 ## How to use:
 ```python
