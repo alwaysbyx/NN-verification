@@ -14,9 +14,9 @@ weights = squeeze(W.weights);
 O = load('opt_params.mat');
 opt_params = O.opt_params;
 lower = [];
-lower = [squeeze(abs(opt_params.lower))];
+lower = [squeeze(abs(opt_params.lower))]; % relu
 upper = [];
-upper = [squeeze(abs(opt_params.upper))];
+upper = [squeeze(abs(opt_params.upper))]; % relu
 final_constant = double(opt_params.final_constant);
 final_linear = double(opt_params.final_linear);
 
